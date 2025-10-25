@@ -80,10 +80,6 @@ END
 
 <img width="1600" height="835" alt="image" src="https://github.com/user-attachments/assets/416dac33-f1ad-4765-80cd-245211122ea4" />
 
-![Uploading image.png…]()
-
-
-
 ---
 
 
