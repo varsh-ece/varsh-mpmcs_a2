@@ -8,9 +8,9 @@ To Write an assembly language program in 8051 to generate a 250 ms delay using T
 - Keil µVision software  
 ---
 
-## Algorithm(ASCENDING ORDER)
+## Algorithm
 
-`````````````````````````````
+```
 1.Start program at 0000H.
 
 2.Clear Port 0 → MOV P0,#00H.
@@ -41,11 +41,10 @@ To Write an assembly language program in 8051 to generate a 250 ms delay using T
 
 15.End program.
 
-``````````````````````````
+```
 
-## Program (Ascending order)
-
-````````````````````
+## program
+```
 ORG 0000H
 
 MAIN:
