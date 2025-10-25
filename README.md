@@ -11,7 +11,35 @@ To Write an assembly language program in 8051 to generate a 250 ms delay using T
 ## Algorithm(ASCENDING ORDER)
 
 `````````````````````````````
-.
+1.Start program at 0000H.
+
+2.Clear Port 0 → MOV P0,#00H.
+
+3.Repeat forever:
+
+4.Toggle LED at P0.5 → CPL P0.5.
+
+5.Call 250 ms delay subroutine.
+
+6.Delay subroutine (DELAY_250MS):
+
+7.Load R2 = 05H (repeat 5 times for 50 ms × 5 = 250 ms).
+
+8.Set Timer1 in Mode1 → TMOD = 10H.
+
+9.Load Timer1 → TH1=3CH, TL1=B0H.
+
+10.Start Timer → SETB TR1.
+
+11.Wait for overflow → JNB TF1, LOOP.
+
+12.Stop timer, clear flag → CLR TR1, CLR TF1.
+
+13.Decrement R2 and repeat until zero.
+
+14.Return to main loop.
+
+15.End program.
 
 ``````````````````````````
 
